@@ -13,7 +13,7 @@ print(dir(g)) #имеет методы '__iter__',  '__next__
 print(dir(it)) #            '__iter__',  '__next__
 print(dir(dir(lst))) #       '__iter__',
 
-#$###################  ##################################
+#$###################
 g=(i for i in range(10000000000)) #время всё равно затрачивает
 
 print(sum(g))
@@ -78,7 +78,7 @@ def gen_exp(a):
 
 cub = gen_exp(a)
 print(*[next(cub) for _ in range(4)], sep=' ')  # 27 8 1 0
-#
+
 ### ##############  ####
 a = 3
 gen_num = (pow(j, 3) for i in range(-a, a) for j in [abs(i)])
