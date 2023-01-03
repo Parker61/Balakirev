@@ -161,7 +161,7 @@ from itertools import cycle
 gen = cycle(cities)
 [print(next(gen), end = ' ') for _ in range(20)]
 
-##########
+##########№
 from itertools import chain, repeat
 c, r = divmod(1_000_000, len(cities))
 gen = chain(repeat(cities, c), (lst[i] for i in range(r)))
@@ -1410,7 +1410,7 @@ P = [[0] * N for i in range(N)]
 while sum(map(sum, P)) < 10:
     P[randrange(0, N, 2)][randrange(0, N, 2)] = 1
 ##################################
-#
+##
 ##################################
 
 ##################################
